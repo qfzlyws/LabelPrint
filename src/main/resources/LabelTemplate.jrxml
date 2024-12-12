@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LabelTest" pageWidth="198" pageHeight="85" columnWidth="198" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="2909d924-8100-4bbe-a054-7eaf3fa9e8f4">
+	<property name="com.jaspersoft.studio.unit." value="mm"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="matNo" class="java.lang.String"/>
+	<field name="matNm" class="java.lang.String"/>
+	<field name="packQty" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<detail>
+		<band height="85" splitType="Stretch">
+			<componentElement>
+				<reportElement mode="Transparent" x="130" y="2" width="48" height="48" uuid="46a4a996-fbde-4712-8338-529fb4cd37e7">
+					<property name="com.jaspersoft.studio.element.name" value="testBar"/>
+				</reportElement>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA[$F{matNo}]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+			<textField>
+				<reportElement x="46" y="2" width="57" height="14" uuid="b6beef44-8c97-4f76-a18a-a7b3d257aefb"/>
+				<textElement verticalAlignment="Top">
+					<font fontName="Microsoft JhengHei" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{matNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="2" width="44" height="14" uuid="489f0d0c-554d-4c1e-8d4d-ae99345856b8">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Microsoft JhengHei" size="10"/>
+				</textElement>
+				<text><![CDATA[商品編號:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="18" width="44" height="14" uuid="b37b3677-cd7a-40d1-aa14-5c97696a7d9c">
+					<property name="com.jaspersoft.studio.unit.height" value="mm"/>
+				</reportElement>
+				<textElement verticalAlignment="Top">
+					<font fontName="Microsoft JhengHei" size="10"/>
+				</textElement>
+				<text><![CDATA[商品名稱:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="46" y="18" width="57" height="14" uuid="63f36318-2127-4e83-a993-ea4e41639dbc"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{matNm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="46" y="35" width="57" height="14" uuid="24e2fc4e-23eb-4270-9acd-922c61689357"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="10"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{packQty}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="35" width="44" height="14" uuid="22559c71-ae4a-4854-96cb-874be7557647"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="10"/>
+				</textElement>
+				<text><![CDATA[包裝規格:]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

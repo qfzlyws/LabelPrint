@@ -1,0 +1,16 @@
+# eclipse personalization
+.metadata
+
+# JAVA Compiled class file
+*.class
+
+# Log file
+*.log
+
+errors.txt
+
+target/
+
+.project
+.classpath
+.settings
